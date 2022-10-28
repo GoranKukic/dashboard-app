@@ -1,4 +1,4 @@
-# Melts
+# Dashboard App
 
 This is task for Junior Front End Developer job interview.
 
