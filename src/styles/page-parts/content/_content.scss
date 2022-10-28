@@ -1,0 +1,56 @@
+// ::selection {
+//     background-color: $black;
+//     color: $white;
+// }
+
+// html {
+//     // scroll-behavior: smooth;
+
+//     /* width */
+//     &::-webkit-scrollbar {
+//         width: 0;
+//     }
+
+//     /* Track */
+//     &::-webkit-scrollbar-track {
+//         background: transparent;
+//     }
+
+//     /* Handle */
+//     &::-webkit-scrollbar-thumb {
+//         background: transparent;
+//     }
+
+//     /* Handle on hover */
+//     &::-webkit-scrollbar-thumb:hover {
+//         background: transparent;
+//     }
+// }
+
+// body {
+//     background-color: $dark-blue;
+//     overflow-x: hidden;
+//     // overflow: hidden;
+//     // height: 100vh;
+//     // height: calc(var(--vh, 1vh) * 100);
+
+//     &.enable-scroll {
+//         height: auto;
+//         overflow-y: visible;
+//     }
+// }
+
+// // main {
+// //     margin-top: 100vh;
+// //     margin-top: calc(var(--vh, 1vh) * 100);
+// //     transition: .5s;
+
+// //     .scroll-down & {
+// //         margin-top: 0;
+// //     }
+// // }
+
+// .container {
+//     margin: 0 auto;
+//     max-width: 1392px;
+// }

@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Melts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is task for Junior Front End Developer job interview.
 
-## Available Scripts
+## The brief
 
-In the project directory, you can run:
+- Napraviti web stranicu kao iz prilozenog Figma dizajna.
+- Stranicu je potrebno napraviti koristeci Angular/React, a fajlovi za stilove treba da budu u SCSS formatu.
 
-### `npm start`
+Funkcionalnosti web stranice:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Na levom meniju postoje 4 ikonice. Klikom na svaku od ikonica menja se ruta stranice. Pulse ikonica je pocetna stranica koja je definisana u dizajnu.
+  Meeting, Items i Actions stranice nisu definisane u dizajnu i mogu da imaju bilo kakav sadrzaj (mozete i ostaviti prethodno definisani tekst pri pravljenju komponente).
+  Klikom na svaku ikonicu ona menja izgled u aktivno stanje (definisan izgled u dizajnu).
+- U headeru sa desne strane stoji ikonica za notifikacije. Klikom na nju pojavljuje se dropdown sa dve opcije. Opcije treba da imaju hover efekat (kao na dizajnu).
+  Takodje ikonica menja boju na klik i nestaje brojac notifikacija u desnom gornjem uglu.
+  Ponovnim klikom na ikonicu, klikom na opciju ili klikom bilo gde van nje, dropdown treba da nestane. Opcije nemaju nikakvu funkcionalnost.
+- Sa desne strane se nalazi kalendar koji moze da se otvara i zatvara. Klikom na X u gornjem desnom uglu kalendar nestaje i svi podaci na stranici se prosire maksimalno (pogledaj dizajn).
+  Klikom na << ikonicu se ponovo pojavljuje i sadrzaj na stranici se skuplja za sirinu kalendara. Bonus zadatak je ako se doda neka animacija prilikom prikazivanja i sakrivanja kalendara (da ima smisla naravno).
+- Na listi itema postoje 3 vrste statusa. Boje statusa zavise od njihovih tipova (pogledaj dizajn). Takodje boje statusa definisu i boju datuma na pocetku liste itema. Ukoliko
+  je status rejected, item dobija delay 1d overdue (pogledaj dizajn). Klikom na ikonicu koja predstavlja oko, otvara se modalni dijalog koji ima dva dugmeta - ok i close (oba zatvaraju modalni dijalog).
+- Na karticama Task You Initiated i Overdue Actions postoje progres barovi sa procentima. Ukoliko je procenat od 0 do 40 boja bara je crvena i zauzima procenat obojenosti zadate vrednosti. Ukoliko je vrednost
+  izmedju 41 - 60 boja je narandzasta, ukoliko je vrednost 61- 90 boja je plava i ukoliko je vrednost veca od 91 boja je zelena.
+- Klikom na dugme + Quick Item otvara se dijalog sa formama. Nakon popunjavanja forme, klikom na dugme submit, vrednosti iz forme treba da se sacuvaju u json fajl. Sva polja u formi treba da su obavezna, ukoliko nisu submit ne moze da se izvrsi.
+  Bonus zadatak - napraviti validacione poruke ukoliko korisnik nije popunio sva polja.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+U prilogu dobijate i data fajl u kojem se nalaze potrebni podaci za rad. Napravite json fajl koji ce da vam posluzi umesto API.
 
-### `npm test`
+## Live Preview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[See live here](https://)
 
-### `npm run build`
+## Description
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- page is responsive for all devices
+- it is pixel perfect with few minor changes so layout is now centered properly
+- in this project I havent used any preporcesors like SCSS for CSS because that was one of conditions
+- also this page is builted without any JavaScript frameworks
+- page is deployed to netlify, and has live preview

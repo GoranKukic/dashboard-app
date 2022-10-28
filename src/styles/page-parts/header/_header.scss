@@ -1,0 +1,40 @@
+.nav {
+  left: 0;
+  background-color: $blue !important;
+  min-height: 200px;
+  min-width: 500px;
+  // padding: uw-size(40) uw-size(60) 0;
+  position: fixed;
+  //   right: 0;
+  //   top: 0;
+  //   z-index: 10;
+
+  // @include max-mq($uw - 1) {
+  //     padding: 40px 60px;
+  // }
+
+  // @include max-mq($lt) {
+  //     padding: 20px 40px 0;
+  // }
+
+  @include max-mq($md) {
+    padding: 20px 30px;
+  }
+
+  @include max-mq($mp) {
+    padding: 20px;
+  }
+
+  // .sticky:not(.menu-active) & {
+  //     z-index: -1;
+  // }
+
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+
+    @include max-mq($md) {
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@mixin min-mq($var) {
+  @media (min-width: #{$var}) {
+    @content;
+  }
+}
+
+@mixin max-mq($var) {
+  @media (max-width: #{$var}) {
+    @content;
+  }
+}
+
+@mixin min-max-mq($var, $var1) {
+  @media (min-width: #{$var}) and (max-width: #{$var1}) {
+    @content;
+  }
+}
+
+@mixin min-mq-height($var) {
+  @media (min-height: #{$var}) {
+    @content;
+  }
+}
+
+@mixin max-mq-height($var1) {
+  @media (max-height: #{$var1}) {
+    @content;
+  }
+}
+
+@mixin max-mq-height-min-width($var1, $var2) {
+  @media (max-height: #{$var1}) and (min-width: #{$var2}) {
+    @content;
+  }
+}
+
+@mixin max-mq-height-max-width($var1, $var2) {
+  @media (max-height: #{$var1}) and (max-width: #{$var2}) {
+    @content;
+  }
+}
+
+@function uw-size($var) {
+  @return $var/1920 * 100vw;
+}

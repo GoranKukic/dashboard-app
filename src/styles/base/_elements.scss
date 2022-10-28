@@ -1,0 +1,15 @@
+img {
+    max-width: 100%;
+}
+
+div,
+nav,
+header,
+footer,
+section {
+    box-sizing: border-box;
+}
+
+.doc-type-project {
+    background-color: $white;
+}
