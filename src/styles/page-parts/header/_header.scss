@@ -1,40 +1,44 @@
 .nav {
   left: 0;
-  background-color: $blue !important;
-  min-height: 200px;
-  min-width: 500px;
-  // padding: uw-size(40) uw-size(60) 0;
+  background-color: $blue;
+  height: 100vh;
+  min-width: 60px;
   position: fixed;
-  //   right: 0;
-  //   top: 0;
-  //   z-index: 10;
+  padding-top: 54px;
+  display: flex;
+  justify-content: center;
 
-  // @include max-mq($uw - 1) {
-  //     padding: 40px 60px;
-  // }
-
-  // @include max-mq($lt) {
-  //     padding: 20px 40px 0;
-  // }
-
-  @include max-mq($md) {
-    padding: 20px 30px;
+  ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
   }
 
-  @include max-mq($mp) {
-    padding: 20px;
-  }
-
-  // .sticky:not(.menu-active) & {
-  //     z-index: -1;
-  // }
-
-  .header-inner {
+  .list-item {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    font-size: $font-size-xs;
+    cursor: pointer;
+    user-select: none;
+  }
 
-    @include max-mq($md) {
-      align-items: center;
+  .list-item:nth-child(1) {
+    margin-bottom: 60px;
+  }
+
+  .list-item:active {
+    background-color: $white;
+    color: $blue;
+
+    .nav-item-img {
+      filter: invert(51%) sepia(57%) saturate(4723%) hue-rotate(182deg)
+        brightness(101%) contrast(88%);
     }
   }
 }

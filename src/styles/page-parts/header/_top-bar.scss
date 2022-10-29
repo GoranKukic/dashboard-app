@@ -1,0 +1,76 @@
+.top-bar {
+  background-color: $white;
+  position: fixed;
+  border-bottom: 1px solid black;
+  left: 60px;
+  width: calc(100% - 60px);
+  height: 50px;
+  align-items: center;
+  display: inline-block;
+  display: flex;
+
+  .logo-icon {
+    margin-left: 45px;
+    width: 60px;
+    align-self: center;
+  }
+
+  .notification-wrapper {
+    margin-right: 0;
+    margin-left: auto;
+    position: relative;
+  }
+
+  .notification-wrapper:active {
+    .notification-icon {
+      filter: invert(51%) sepia(57%) saturate(4723%) hue-rotate(182deg);
+    }
+  }
+
+  .notif-badge {
+    right: 10px !important; // setting new style via '!important' because notification badge has inline styles as instaled react component
+    top: 0 !important; // same here
+    padding: 3px !important; // same here
+    max-width: 14px !important; // same here
+    max-height: 14px !important; // same here
+    font-family: $font-base !important; // same here
+    font-weight: 600 !important; // same here
+    font-size: 9px !important; // same here
+    border-radius: 50% !important; // same here
+  }
+
+  .notification-icon {
+    margin-right: 17px;
+    margin-left: auto;
+    height: 100%;
+    width: 18px;
+    justify-self: center;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: absolute;
+    left: -125px;
+    top: 38px;
+    display: flex;
+    flex-direction: column;
+    color: $blue;
+    width: 150px;
+    padding: 5px;
+
+    li {
+      list-style: none;
+      padding-left: 12px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      font-size: $font-size-sm;
+      line-height: 18px;
+    }
+
+    li:hover {
+      background-color: $blue;
+      color: $white;
+      border-radius: 6px;
+    }
+  }
+}
