@@ -1,0 +1,14 @@
+.app {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+
+  .main-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-wrapper {
+    width: 100%;
+  }
+}

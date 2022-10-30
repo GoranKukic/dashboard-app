@@ -6,13 +6,13 @@ body {
   // line-height: 1.6em;
   word-break: break-word;
 
-  @include max-mq($lt) {
-    font-size: 18px;
-  }
+  // @include max-mq($lt) {
+  //   font-size: 18px;
+  // }
 
-  @include max-mq($sm) {
-    font-size: 16px;
-  }
+  // @include max-mq($sm) {
+  //   font-size: 16px;
+  // }
 }
 
 h1,
@@ -20,11 +20,13 @@ h2,
 h3,
 h4 {
   font-family: $font-base;
+  color: $primary-text-color;
 }
 
 p {
   margin: 0 0 1.5em;
   font-family: $font-base;
+  color: $primary-text-color;
 }
 
 li {

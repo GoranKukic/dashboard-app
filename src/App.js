@@ -1,11 +1,15 @@
 import Nav from './components/Nav';
+import Pulse from './components/Pulse';
 import TopBar from './components/TopBar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Nav />
-      <TopBar />
+      <div className="main-wrapper">
+        <TopBar />
+        <Pulse />
+      </div>
     </div>
   );
 }

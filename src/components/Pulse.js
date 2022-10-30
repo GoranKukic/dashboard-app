@@ -1,11 +1,14 @@
-import pulseIcon from '../images/pulse.svg';
-import meetingIcon from '../images/meeting.svg';
-import itemsIcon from '../images/items.svg';
-import actionsIcon from '../images/actions.svg';
+import Title from './PulseComponents/Title';
+import QuickItems from './PulseComponents/QuickItems';
 
 const Pulse = () => {
   return (
     <div className="pulse">
+      <div className="left-wrapper">
+        <Title />
+        <QuickItems />
+      </div>
+      <div className="Calendar"></div>
     </div>
   );
 };
