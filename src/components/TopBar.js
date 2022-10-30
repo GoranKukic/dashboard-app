@@ -5,34 +5,28 @@ import logoIcon from '../images/logo.svg';
 import notificationIcon from '../images/notification.svg';
 
 const TopBar = () => {
-  const [notifBadgeIsShown, setNotifBadgeShown] = useState(true);
-  //   const [dropdownIsShown, setDropdownShown] = useState(false);
+  const [notifBadgeIsShown, setNotifBadgeShown] = useState(false);
   const notifications = ['Notification 1', 'Notification 2'];
-  let listItems = '';
+  
+  let listItems = notifications.map((number) => (
+    <li key={number.toString()}>{number}</li>
+  ));
 
   return (
     <div className="top-bar">
       <img className="logo-icon" src={logoIcon} alt="Logo icon" />
       <div
         className="notification-wrapper"
-        onClick={() => setNotifBadgeShown(false)}
+        onClick={() => setNotifBadgeShown(true)}
       >
-        {notifBadgeIsShown && (
+        {!notifBadgeIsShown ? (
           <NotificationBadge
             className="notif-badge"
             count={notifications.length}
             effect={Effect.SCALE}
           />
-        )}
-        {!notifBadgeIsShown && (
-          <div className="dropdown">
-            {
-              (listItems = notifications.map((number) => (
-                <li key={number.toString()}>{number}</li>
-              )))
-            }
-          </div>
-        )}
+        ) : null}
+        {notifBadgeIsShown ? <div className="dropdown">{listItems}</div> : null}
 
         <img
           className="notification-icon"
