@@ -52,4 +52,63 @@
     line-height: 86%;
     margin-top: 8px;
   }
+
+  .qc-img-wrap {
+    border-radius: 50%;
+    width: 31px;
+    height: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .qc-meetings {
+    .qc-img-wrap {
+      background-color: $blue;
+      img {
+        width: 19.93px;
+        height: 12.92px;
+      }
+    }
+  }
+
+  .qc-items {
+    .qc-img-wrap {
+      background-color: $purple;
+      img {
+        width: 15px;
+        height: 16px;
+      }
+    }
+  }
+
+  .qc-actions {
+    .qc-img-wrap {
+      background-color: $red;
+      img {
+        width: 19px;
+        height: 19px;
+      }
+    }
+  }
+
+  .qc-reminders {
+    .qc-img-wrap {
+      background-color: $yellow;
+      img {
+        width: 17.1px;
+        height: 18px;
+      }
+    }
+  }
+
+  .qc-notes {
+    .qc-img-wrap {
+      background-color: $green;
+      img {
+        width: 13px;
+        height: 17px;
+      }
+    }
+  }
 }

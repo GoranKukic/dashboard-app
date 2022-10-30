@@ -1,29 +1,35 @@
+import MeetingsIcon from '../../images/meeting.svg';
+import ItemsIcon from '../../images/items.svg';
+import ActionsIcon from '../../images/actions.svg';
+import RemindersIcon from '../../images/reminders.svg';
+import NotesIcon from '../../images/notes.svg';
+
 const QuickItems = () => {
   const quickItemsList = [
     {
       title: 'Meetings',
       number: 23,
-      iconUrl: '../../images/download.png',
+      iconUrl: MeetingsIcon,
     },
     {
       title: 'Items',
       number: 11,
-      iconUrl: '../../images/items.svg',
+      iconUrl: ItemsIcon,
     },
     {
       title: 'Actions',
       number: 15,
-      iconUrl: '../../images/actions.svg',
+      iconUrl: ActionsIcon,
     },
     {
       title: 'Reminders',
       number: 9,
-      iconUrl: '../../images/reminders.svg',
+      iconUrl: RemindersIcon,
     },
     {
       title: 'Notes',
       number: 18,
-      iconUrl: '../../images/notes.svg',
+      iconUrl: NotesIcon,
     },
   ];
 
@@ -36,12 +42,15 @@ const QuickItems = () => {
             key={item.title.toString()}
           >
             <div className="qc-upper">
-              {/* src={item.iconUrl} */}
-              <img
-                className="qc-img"
-                src={'../../images/download.png'}
-                alt={item.title}
-              />
+              <div className="qc-img-wrap">
+                <img
+                  className="qc-img"
+                  //src={require(`${item.iconUrl}`).default}  --- dynamic maping of images is not working
+                  src={item.iconUrl}
+                  alt={item.title}
+                />
+              </div>
+
               <p className="qc-number">{item.number}</p>
             </div>
             <div className="qc-lower">
