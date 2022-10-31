@@ -25,19 +25,19 @@
     font-size: $font-size-xs;
     cursor: pointer;
     user-select: none;
+
+    &:active {
+      background-color: $white;
+      color: $blue;
+
+      .nav-item-img {
+        filter: invert(51%) sepia(57%) saturate(4723%) hue-rotate(182deg)
+          brightness(101%) contrast(88%);
+      }
+    }
   }
 
   .list-item:nth-child(1) {
     margin-bottom: 60px;
-  }
-
-  .list-item:active {
-    background-color: $white;
-    color: $blue;
-
-    .nav-item-img {
-      filter: invert(51%) sepia(57%) saturate(4723%) hue-rotate(182deg)
-        brightness(101%) contrast(88%);
-    }
   }
 }
