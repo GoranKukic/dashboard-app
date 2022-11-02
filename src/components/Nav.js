@@ -1,26 +1,37 @@
-import pulseIcon from '../images/pulse.svg';
-import meetingIcon from '../images/meeting.svg';
-import itemsIcon from '../images/items.svg';
-import actionsIcon from '../images/actions.svg';
-
 const Nav = () => {
   return (
     <div className="nav">
       <ul>
         <li className="list-item">
-          <img className="nav-item-img" src={pulseIcon} alt="Pulse icon" />
+          <img
+            className="nav-item-img"
+            src="images/pulse.svg"
+            alt="Pulse icon"
+          />
           Pulse
         </li>
         <li className="list-item">
-          <img className="nav-item-img" src={meetingIcon} alt="Meeting icon" />
+          <img
+            className="nav-item-img"
+            src="images/meeting.svg"
+            alt="Meeting icon"
+          />
           Meeting
         </li>
         <li className="list-item">
-          <img className="nav-item-img" src={itemsIcon} alt="Items icon" />
+          <img
+            className="nav-item-img"
+            src="images/items.svg"
+            alt="Items icon"
+          />
           Items
         </li>
         <li className="list-item">
-          <img className="nav-item-img" src={actionsIcon} alt="Actions icon" />
+          <img
+            className="nav-item-img"
+            src="images/actions.svg"
+            alt="Actions icon"
+          />
           Actions
         </li>
       </ul>

@@ -5,8 +5,8 @@
         "date": "2022-10-09T00:00:00",
         "title": "Random Title one",
         "businessUnit": "Business Unit some text to show",
-        "userImg": "",
-        "delay": "1d overdue",
+        "userImg": "images/user-359.png",
+        "delay": "1d Overdue",
         "status": "Approved",
         "id": "1a"
       },
@@ -14,7 +14,7 @@
         "date": "2022-11-15T00:00:00",
         "title": "Random Title two",
         "businessUnit": "Business Unit some text to show",
-        "userImg": "",
+        "userImg": "images/user-353.png",
         "delay": "On Track",
         "status": "In Progress",
         "id": "1b"
@@ -23,7 +23,7 @@
         "date": "2022-05-02T00:00:00",
         "title": "Random Title three",
         "businessUnit": "Business Unit some text to show",
-        "userImg": "",
+        "userImg": null,
         "delay": "1d Overdue",
         "status": "Rejected",
         "id": "1c"
@@ -34,7 +34,7 @@
   {
     "tasks": [
       {
-        "img": "",
+        "img": "images/user-360.png",
         "title": "Create new finance document",
         "subtitle": "Edited 5 hours ago",
         "date": "2022-05-22T00:00:00",
@@ -42,7 +42,7 @@
         "id": "2a"
       },
       {
-        "img": "",
+        "img": "images/user-361.png",
         "title": "Create new finance document",
         "subtitle": "Edited 5 hours ago",
         "date": "2022-05-25T00:00:00",
@@ -50,7 +50,7 @@
         "id": "2b"
       },
       {
-        "img": "",
+        "img": "images/user-362.png",
         "title": "Create new finance document",
         "subtitle": "Edited 5 hours ago",
         "date": "2022-05-21T00:00:00",
@@ -58,7 +58,7 @@
         "id": "2c"
       },
       {
-        "img": "",
+        "img": "images/user-363.png",
         "title": "Create new finance document",
         "subtitle": "Edited 5 hours ago",
         "date": "2022-05-28T00:00:00",

@@ -1,3 +1,228 @@
 .items-list {
   display: flex;
+  width: 100%;
+  background-color: $gray;
+
+  .itmes-list-th {
+    background-color: #dedede;
+    padding: 20px 0 20px 20px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: $font-size-x;
+    font-weight: 500;
+  }
+
+  .itmes-list-td {
+    background-color: $white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 80px;
+    border-top: 0.5px solid $light-border;
+    border-bottom: 0.5px solid $light-border;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    p {
+      margin: 0;
+    }
+  }
+
+  .items-list-date {
+    max-width: 5.6%; // 70px;
+    min-width: 70px;
+    width: 100%;
+
+    .itmes-list-th {
+      padding-left: 10px !important;
+      border-radius: 10px 0 0 10px;
+    }
+
+    .itmes-list-td {
+      border-radius: 10px 0 0 10px;
+      border-left: 0.5px solid $light-border;
+      // padding-right: 10px;
+
+      p {
+        width: 21px;
+        box-sizing: border-box;
+        display: block;
+      }
+    }
+  }
+
+  .il-date-content {
+    position: relative;
+    background-color: $white !important;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    height: 54px;
+    padding-right: auto;
+    border-right: 0.7px dashed $border-gray;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 80px;
+
+    & p:first-child {
+      text-transform: uppercase;
+      font-size: $font-size-x;
+      line-height: 100%;
+      font-weight: 400;
+      word-break: keep-all;
+    }
+
+    & p:nth-child(2) {
+      font-size: $font-size-l;
+      line-height: 100%;
+      text-align: center;
+    }
+  }
+  .box {
+    position: absolute;
+    content: '';
+    height: 36px;
+    width: 7px;
+    left: 0;
+    z-index: 999;
+    border-radius: 0px 4px 4px 0px;
+  }
+
+  .items-list-title {
+    max-width: 23.6%; //305px;
+    width: 100%;
+  }
+
+  .items-list-business {
+    max-width: 25.6%; // 330px;
+    width: 100%;
+  }
+
+  .items-list-user {
+    max-width: 21.7%; // 280px;
+    width: 100%;
+
+    .itmes-list-td {
+      padding-left: 0px;
+      .user-img-wrapper {
+        padding-left: 20px;
+        border-left: 0.7px dashed $border-gray;
+        align-self: center;
+        max-height: 54px;
+        height: 100%;
+      }
+    }
+  }
+
+  .items-list-delay {
+    max-width: 12%; //140px;
+    min-width: 135px;
+    width: 100%;
+    .itmes-list-td {
+      // display: flex;
+      justify-content: space-between;
+      .il-delay-content {
+        max-width: 82px;
+        width: 100%;
+        min-height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        border-radius: 20px;
+
+        margin-left: 20px;
+      }
+      p {
+        padding: 0;
+        font-size: $font-size-x;
+        line-height: 97%;
+        font-weight: 400;
+      }
+    }
+  }
+  .items-list-status {
+    max-width: 12%; //140px;
+    min-width: 120px;
+    width: 100%;
+
+    .itmes-list-th {
+      border-radius: 0 5px 5px 0;
+    }
+
+    .itmes-list-td {
+      border-radius: 0 5px 5px 0;
+      border-right: 0.5px solid $light-border;
+    }
+
+    .il-status-content {
+      max-width: 92px;
+      width: 100%;
+      min-height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 0;
+      // background-color: $light-red;
+      margin-left: 20px;
+
+      p {
+        // color: $red;
+        font-size: $font-size-x;
+        line-height: 97%;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .il-title-content,
+  .il-business-content,
+  .il-business-content,
+  .il-user-content,
+  .il-delay-content,
+  .il-status-content {
+    font-weight: 500;
+    font-size: $font-size-sm;
+    line-height: 86%;
+    padding-left: 20px;
+  }
+
+  .approved {
+    background-color: $light-green;
+    p {
+      color: $green;
+    }
+  }
+
+  .approved-start-line {
+    background-color: $green;
+  }
+
+  .progress {
+    background-color: $light-yellow;
+    .box {
+      background-color: $yellow !important;
+    }
+    p {
+      color: $yellow;
+    }
+  }
+
+  .progress-start-line {
+    background-color: $yellow;
+  }
+
+  .rejected {
+    background-color: $light-red;
+    p {
+      color: $red;
+    }
+  }
+
+  .rejected-start-line {
+    background-color: $red;
+  }
 }

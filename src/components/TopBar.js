@@ -1,8 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Effect } from 'react-notification-badge';
 import NotificationBadge from 'react-notification-badge/lib/components/NotificationBadge';
-import logoIcon from '../images/logo.svg';
-import notificationIcon from '../images/notification.svg';
 
 const TopBar = () => {
   const [notifBadgeIsShown, setNotifBadgeShown] = useState(false);
@@ -30,7 +28,7 @@ const TopBar = () => {
 
   return (
     <div className="top-bar">
-      <img className="logo-icon" src={logoIcon} alt="Logo icon" />
+      <img className="logo-icon" src="images/logo.svg" alt="Logo icon" />
       <div
         className="notification-wrapper"
         onClick={() =>
@@ -50,7 +48,7 @@ const TopBar = () => {
 
         <img
           className="notification-icon"
-          src={notificationIcon}
+          src="images/notification.svg"
           alt="Notification icon"
           ref={refOne}
         />

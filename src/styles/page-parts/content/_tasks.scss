@@ -1,5 +1,72 @@
 .tasks {
+  margin-top: 60px;
+  max-width: 620px;
+  width: 100%;
+  height: fit-content;
+  background-color: $white;
+  box-shadow: 0px 0px 20px rgba(154, 154, 154, 0.1);
+  border-radius: 10px;
+  //padding: 16px 20px 20px 20px;
+
+  .tasks-headline {
+    padding: 16px 20px 13px 20px;
+    padding-bottom: 13px;
+
+    border-bottom: 0.7px solid $dark-gray;
+    h4 {
+      margin-bottom: 4px;
+    }
+  }
+
   .tasks-wrapper {
     display: flex;
+    margin-top: 15px;
+    padding: 0 20px 20px 20px;
+  }
+
+  .tasks-single-user {
+    margin-bottom: 18px;
+    margin-right: 16px;
+  }
+
+  .tasks-title-subt-single {
+    padding-top: 6px;
+    margin-bottom: 25px;
+  }
+
+  .tasks-date-progress {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .tasks-date-progress-single {
+    padding-top: 4px;
+    margin-bottom: 21px;
+    text-align: right;
+  }
+  .progress-bar {
+    width: 60px;
+    height: 13px;
+    background-color: $tasks-progress-bar-bg;
+    border-radius: 6.5px;
+    margin-top: 5px;
+    position: relative;
+
+    .bar-fill {
+      height: 13px;
+      display: flex;
+      align-items: center;
+      border-radius: 6.5px;
+    }
+
+    p {
+      position: absolute;
+      padding-left: 6px;
+      font-size: $font-size-xs;
+      line-height: 100%;
+      color: $white;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
   }
 }

@@ -1,35 +1,29 @@
-import MeetingsIcon from '../../images/meeting.svg';
-import ItemsIcon from '../../images/items.svg';
-import ActionsIcon from '../../images/actions.svg';
-import RemindersIcon from '../../images/reminders.svg';
-import NotesIcon from '../../images/notes.svg';
-
 const QuickItems = () => {
   const quickItemsList = [
     {
       title: 'Meetings',
       number: 23,
-      iconUrl: MeetingsIcon,
+      iconUrl: 'images/meeting.svg',
     },
     {
       title: 'Items',
       number: 11,
-      iconUrl: ItemsIcon,
+      iconUrl: 'images/items.svg',
     },
     {
       title: 'Actions',
       number: 15,
-      iconUrl: ActionsIcon,
+      iconUrl: 'images/actions.svg',
     },
     {
       title: 'Reminders',
       number: 9,
-      iconUrl: RemindersIcon,
+      iconUrl: 'images/reminders.svg',
     },
     {
       title: 'Notes',
       number: 18,
-      iconUrl: NotesIcon,
+      iconUrl: 'images/notes.svg',
     },
   ];
 
@@ -56,6 +50,7 @@ const QuickItems = () => {
             <div className="qc-lower">
               <p className="qc-title">{item.title}</p>
             </div>
+            <span className="qc-shadow"></span>
           </div>
         ))}
       </div>
