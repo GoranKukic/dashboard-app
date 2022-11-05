@@ -1,7 +1,6 @@
 body {
   color: $white;
   word-break: break-word;
-  outline: 1px solid red;
 }
 
 h1,
@@ -41,12 +40,10 @@ a {
   font-size: 13px;
   line-height: 100%;
   margin-bottom: 3px !important;
-}
 
-.p-standard-actions {
-  font-weight: 400;
-  font-size: $font-size-x;
-  line-height: 100%;
+  @media (max-width: $xs) {
+    font-size: 12px;
+  }
 }
 
 .p-gray {
@@ -55,4 +52,9 @@ a {
   line-height: 100%;
   color: $text-gray;
   margin: 0;
+
+  @media (max-width: $xs) {
+    font-size: 10px;
+  }
 }
+

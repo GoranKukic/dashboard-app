@@ -1,6 +1,129 @@
 .calendar {
-  display: none;
+  min-width: 350px;
+  height: 100vh;
+  width: 100%;
+  padding: 20px 20px 20px 25px;
+  background-color: $white;
+  z-index: 22;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $lg) {
+    height: fit-content;
+  }
+
+  @media (max-width: $sm) {
+    min-height: 150px;
+  }
+
+  .calendar-wrapper{
+    margin: 0 auto 0 0;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  h4 {
+    margin-bottom: 56px;
+  }
+
+  ul {
+    list-style-type: disc;
+    color: $blue;
+    padding-inline-start: 16px;
+    margin: 0;
+  }
   .calendar-list {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .calendar-date {
+    color: $blue;
+    font-size: $font-size-x;
+    line-height: 100%;
+  }
+
+  .calendar-status-wrapper {
+    width: 65px;
+    height: 17px;
+    background-color: rgba(253, 104, 140, 0.2);
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 27px;
+
+    p {
+      font-size: $font-size-x;
+      line-height: 100%;
+      color: $calendar-pink;
+      font-weight: 500;
+      text-align: center;
+      margin: 0 0 1px 0;
+    }
+  }
+
+  .calendar-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 40px;
+    height: 30px;
+    background-color: $white;
+    border-radius: 2px 0px 0px 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img:hover {
+      padding: 5px;
+      border: 1px solid $blue;
+      box-sizing: border-box;
+    }
+  }
+
+  .p-calendar {
+    font-size: $font-size-x;
+    line-height: 100%;
+    font-weight: 500;
+    color: $calendar-gray;
+    text-transform: capitalize;
+  }
+
+  .calendar-form-title {
+    margin-top: 4px;
+    margin-bottom: 17px;
+    display: flex;
+    flex-direction: row;
+
+    img {
+      width: 13px;
+      height: 13px;
+      margin-right: 10px;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .calendar-form-label {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 138%;
+    margin-bottom: 2px;
+  }
+
+  .calendar-input-field{
+    height: 30px;
+    max-width: 300px;
+    width: 100%;
+    border: 1px solid #88859C;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: $primary-text-color;
   }
 }
+

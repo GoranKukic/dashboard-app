@@ -1,17 +1,17 @@
 .tasks {
   margin-top: 60px;
-  max-width: 620px;
+  max-width: 48%;
+  min-width: 400px;
   width: 100%;
   height: fit-content;
   background-color: $white;
   box-shadow: 0px 0px 20px rgba(154, 154, 154, 0.1);
   border-radius: 10px;
-  //padding: 16px 20px 20px 20px;
+  position: relative;
 
   .tasks-headline {
     padding: 16px 20px 13px 20px;
     padding-bottom: 13px;
-
     border-bottom: 0.7px solid $dark-gray;
     h4 {
       margin-bottom: 4px;
@@ -27,9 +27,21 @@
   .tasks-single-user {
     margin-bottom: 18px;
     margin-right: 16px;
+    min-width: 36px;
+
+    @media (max-width: $tb) {
+      min-width: 46px;
+    }
+
+    img {
+      width: 36px;
+      height: 36px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
   }
 
   .tasks-title-subt-single {
+    padding-right: 10px;
     padding-top: 6px;
     margin-bottom: 25px;
   }
@@ -37,6 +49,25 @@
   .tasks-date-progress {
     margin-left: auto;
     margin-right: 0;
+  }
+
+  @media (max-width: $tb) {
+    .tasks-single-user,
+    .tasks-title-subt-single,
+    .tasks-date-progress-single {
+      display: flex;
+      align-items: center;
+      margin: 0 !important;
+      height: 60px;
+    }
+  }
+
+  @media (max-width: $xs) {
+    .tasks-single-user,
+    .tasks-title-subt-single,
+    .tasks-date-progress-single {
+      height: 70px;
+    }
   }
 
   .tasks-date-progress-single {
@@ -47,7 +78,7 @@
   .progress-bar {
     width: 60px;
     height: 13px;
-    background-color: $tasks-progress-bar-bg;
+    background-color: $progress-bar-bg;
     border-radius: 6.5px;
     margin-top: 5px;
     position: relative;
@@ -68,5 +99,20 @@
       margin-top: auto;
       margin-bottom: auto;
     }
+  }
+
+  .tasks-shadow {
+    position: absolute;
+    background: radial-gradient(
+      35.67% 42.23% at 50% 50.13%,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    opacity: 0.1;
+    left: 0;
+    bottom: -50px;
+    width: 100%;
+    height: 79.57px;
+    z-index: -11;
   }
 }

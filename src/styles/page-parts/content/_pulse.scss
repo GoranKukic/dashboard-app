@@ -1,11 +1,58 @@
 .pulse {
-  background-color: $dark-gray;
+  background-color: $background-gray; //$dark-gray;
   width: 100%;
-  height: fit-content;
+  max-width: calc(100vw - 60px);
+  min-height: fit-content;
+  height: 100%;
   display: flex;
-  padding: 20px 45px;
+  overflow: hidden;
+  position: relative;
+
+
+  @media (max-width: $lg) {
+    flex-direction: column-reverse;
+  }
+
+
+  .left-wrapper {
+    padding: 20px 45px;
+    
+    @media (max-width: $md) {
+      padding: 20px 10px;
+    }
+  }
 
   .tasks-actions-wrapper {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @media (max-width: $md) {
+      flex-direction: column;
+
+      .tasks,
+      .actions {
+        min-width: 100%;
+      }
+    }
+  }
+
+
+  .calendar-open-btn {
+    position: absolute;
+    top: 13px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: $white;
+    border-radius: 2px 0px 0px 2px;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid $blue;
+      box-sizing: border-box;
+    }
   }
 }
+

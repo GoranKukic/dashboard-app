@@ -1,31 +1,44 @@
+import React, { useState } from "react";
+import QuickItemModal from "./QuickItemModal";
+
 const QuickItems = () => {
   const quickItemsList = [
     {
-      title: 'Meetings',
+      title: "Meetings",
       number: 23,
-      iconUrl: 'images/meeting.svg',
+      iconUrl: "images/meeting.svg",
     },
     {
-      title: 'Items',
+      title: "Items",
       number: 11,
-      iconUrl: 'images/items.svg',
+      iconUrl: "images/items.svg",
     },
     {
-      title: 'Actions',
+      title: "Actions",
       number: 15,
-      iconUrl: 'images/actions.svg',
+      iconUrl: "images/actions.svg",
     },
     {
-      title: 'Reminders',
+      title: "Reminders",
       number: 9,
-      iconUrl: 'images/reminders.svg',
+      iconUrl: "images/reminders.svg",
     },
     {
-      title: 'Notes',
+      title: "Notes",
       number: 18,
-      iconUrl: 'images/notes.svg',
+      iconUrl: "images/notes.svg",
     },
   ];
+
+  const [quickItemisShown, setQuickItemIsShown] = useState(false);
+
+  const showQuickItemHandler = () => {
+    setQuickItemIsShown(true);
+  };
+
+  const hideQuickItemHandler = () => {
+    setQuickItemIsShown(false);
+  };
 
   return (
     <div className="quick-items">
@@ -39,7 +52,6 @@ const QuickItems = () => {
               <div className="qc-img-wrap">
                 <img
                   className="qc-img"
-                  //src={require(`${item.iconUrl}`).default}  --- dynamic maping of images is not working
                   src={item.iconUrl}
                   alt={item.title}
                 />
@@ -54,7 +66,12 @@ const QuickItems = () => {
           </div>
         ))}
       </div>
-      <button className="btn">+ Quick item</button>
+      <button className="btn" onClick={() => showQuickItemHandler(true)}>
+        + Quick item
+      </button>
+      {quickItemisShown ? (
+        <QuickItemModal onClose={hideQuickItemHandler}/>
+      ) : null}
     </div>
   );
 };

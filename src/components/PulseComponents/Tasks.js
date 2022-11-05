@@ -37,8 +37,10 @@ const Tasks = () => {
               Records[1].tasks.map((data) => {
                 return Records[1].tasks ? (
                   <div key={data.id} className="tasks-title-subt-single">
-                    <p className="p-standard">{data.title}</p>
-                    <p className="p-gray">{data.subtitle}</p>
+                    <div>
+                      <p className="p-standard">{data.title}</p>
+                      <p className="p-gray">{data.subtitle}</p>
+                    </div>
                   </div>
                 ) : null;
               })}
@@ -50,18 +52,20 @@ const Tasks = () => {
               Records[1].tasks.map((data) => {
                 return Records[1].tasks ? (
                   <div key={data.id} className="tasks-date-progress-single">
-                    <p className="p-gray">
-                      {new Date(data.date).toLocaleDateString('en-GB', {
-                        day: 'numeric',
-                        month: 'short',
-                      })}
-                    </p>
-                    <div className="progress-bar">
-                      <div
-                        className="bar-fill"
-                        style={colorFunction(data.progress)}
-                      >
-                        <p>{data.progress}%</p>
+                    <div>
+                      <p className="p-gray">
+                        {new Date(data.date).toLocaleDateString('en-GB', {
+                          day: 'numeric',
+                          month: 'short',
+                        })}
+                      </p>
+                      <div className="progress-bar">
+                        <div
+                          className="bar-fill"
+                          style={colorFunction(data.progress)}
+                        >
+                          <p>{data.progress}%</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -70,6 +74,7 @@ const Tasks = () => {
           </div>
         </div>
       </div>
+      <span className="tasks-shadow"></span>
     </div>
   );
 };

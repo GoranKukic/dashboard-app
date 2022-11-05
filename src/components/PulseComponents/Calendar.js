@@ -1,30 +1,39 @@
-import Records from '../../records.json';
+import Records from "../../records.json";
 
-const Calendar = () => {
+const Calendar = (props) => {
   return (
     <div className="calendar">
-      <h3>Calendar</h3>
+      <h4>Calendar</h4>
       <div className="calendar-wrapper">
         <div className="calendar-list">
           <div className="calendar-name-date">
-            <div>
+            <ul>
               {Records[3].calendar &&
                 Records[3].calendar.map((data) => {
                   return Records[3].calendar ? (
                     <div key={data.id}>
-                      <p>{data.name}</p>
-                      <p>{data.date}</p>
+                      <li>
+                        <p className="p-calendar">{data.name}</p>
+                      </li>
+                      <p className="calendar-date">
+                        {" "}
+                        {new Date(data.date).toLocaleDateString("en-GB", {
+                          day: "numeric",
+                          month: "numeric",
+                          year: "numeric",
+                        })}
+                      </p>
                     </div>
                   ) : null;
                 })}
-            </div>
+            </ul>
           </div>
           <div className="calendar-status">
             <div>
               {Records[3].calendar &&
                 Records[3].calendar.map((data) => {
                   return Records[3].calendar ? (
-                    <div key={data.id}>
+                    <div key={data.id} className="calendar-status-wrapper">
                       <p>{data.status}</p>
                     </div>
                   ) : null;
@@ -33,21 +42,31 @@ const Calendar = () => {
           </div>
         </div>
         <div className="calendar-input">
+          <div className="calendar-form-title">
+            <img src="images/plus.png" Alt="Add" />
+            <p className="p-calendar">Add new item</p>
+          </div>
           <label for="fname">
-            <p>Meeting name</p>
+            <p className="calendar-form-label">Meeting name</p>
           </label>
-          <input type="text" id="fname" name="fname" />
+          <input className="calendar-input-field" type="text" id="fname" name="fname" />
           <br />
           <br />
           <label for="lname">
-            <p>Date</p>
+            <p className="calendar-form-label">Date</p>
           </label>
-          <input type="date" id="lname" name="lname" />
+          <input className="calendar-input-field" type="date" id="lname" name="lname" />
           <br />
           <br />
           <input className="btn" type="submit" value="Submit"></input>
         </div>
       </div>
+      <span
+        className="calendar-close-btn"
+        onClick={() => props.viewCalendar(false)}
+      >
+        <img src="images/cal-close-btn.png" alt="Close calendar button"/>
+      </span>
     </div>
   );
 };
