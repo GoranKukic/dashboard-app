@@ -16,7 +16,7 @@
     min-height: 150px;
   }
 
-  .calendar-wrapper{
+  .calendar-wrapper {
     margin: 0 auto 0 0;
     max-width: 500px;
     width: 100%;
@@ -51,8 +51,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    margin-bottom: 27px;
+    margin-top: 3px;
+    margin-bottom: 32px;
 
     p {
       font-size: $font-size-x;
@@ -68,8 +68,8 @@
     position: absolute;
     top: 10px;
     right: 0px;
-    width: 40px;
-    height: 30px;
+    width: 23px; //40px;
+    height: 27px; //30px;
     background-color: $white;
     border-radius: 2px 0px 0px 2px;
     cursor: pointer;
@@ -90,6 +90,7 @@
     font-weight: 500;
     color: $calendar-gray;
     text-transform: capitalize;
+    margin-bottom: 3px;
   }
 
   .calendar-form-title {
@@ -116,14 +117,13 @@
     margin-bottom: 2px;
   }
 
-  .calendar-input-field{
+  .calendar-input-field {
     height: 30px;
     max-width: 300px;
     width: 100%;
-    border: 1px solid #88859C;
+    border: 1px solid #88859c;
     border-radius: 3px;
     box-sizing: border-box;
     color: $primary-text-color;
   }
 }
-

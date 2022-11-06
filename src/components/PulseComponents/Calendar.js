@@ -1,4 +1,4 @@
-import Records from "../../records.json";
+import Records from '../../records.json';
 
 const Calendar = (props) => {
   return (
@@ -16,11 +16,11 @@ const Calendar = (props) => {
                         <p className="p-calendar">{data.name}</p>
                       </li>
                       <p className="calendar-date">
-                        {" "}
-                        {new Date(data.date).toLocaleDateString("en-GB", {
-                          day: "numeric",
-                          month: "numeric",
-                          year: "numeric",
+                        {' '}
+                        {new Date(data.date).toLocaleDateString('en-GB', {
+                          day: 'numeric',
+                          month: 'numeric',
+                          year: 'numeric',
                         })}
                       </p>
                     </div>
@@ -49,23 +49,38 @@ const Calendar = (props) => {
           <label for="fname">
             <p className="calendar-form-label">Meeting name</p>
           </label>
-          <input className="calendar-input-field" type="text" id="fname" name="fname" />
+          <input
+            className="calendar-input-field"
+            type="text"
+            id="fname"
+            name="fname"
+          />
           <br />
           <br />
           <label for="lname">
             <p className="calendar-form-label">Date</p>
           </label>
-          <input className="calendar-input-field" type="date" id="lname" name="lname" />
+          <input
+            className="calendar-input-field"
+            type="date"
+            id="lname"
+            name="lname"
+          />
           <br />
           <br />
-          <input className="btn" type="submit" value="Submit"></input>
+          <input
+            className="btn"
+            onClick={() => props.viewCalendar(false)}
+            type="submit"
+            value="Submit"
+          ></input>
         </div>
       </div>
       <span
         className="calendar-close-btn"
         onClick={() => props.viewCalendar(false)}
       >
-        <img src="images/cal-close-btn.png" alt="Close calendar button"/>
+        <img src="images/cal-close-btn.png" alt="Close calendar button" />
       </span>
     </div>
   );
