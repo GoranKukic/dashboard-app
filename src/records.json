@@ -8,7 +8,8 @@
         "userImg": "images/user-359.png",
         "delay": "1d Overdue",
         "status": "Approved",
-        "id": "1a"
+        "id": "1a",
+        "quickView": "Suspendisse nulla sem, hendrerit quis consequat sed, dictum sit amet lacus. Quisque purus justo, ullamcorper eget molestie nec, lobortis ac nisi. Donec eget erat et massa porttitor feugiat. Donec nec egestas mi, at sagittis felis. Sed ornare libero sem, sit amet tristique velit feugiat nec. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi ut ullamcorper magna. Proin augue velit, sagittis venenatis velit ut, bibendum accumsan nisl. Vivamus eu ligula egestas, interdum libero in, faucibus turpis. Nulla euismod ut velit vel porta. Aliquam luctus pharetra rutrum."
       },
       {
         "date": "2022-11-15T00:00:00",
@@ -17,7 +18,8 @@
         "userImg": "images/user-353.png",
         "delay": "On Track",
         "status": "In Progress",
-        "id": "1b"
+        "id": "1b",
+        "quickView": "Nulla facilisi. Sed nec nunc ligula. Cras gravida condimentum semper. Sed accumsan dolor tristique, dapibus dui eu, sodales velit. Quisque sit amet erat vitae tortor gravida facilisis. Curabitur id porttitor magna. Nunc at lectus tristique, pretium nulla at, egestas est. Nam quis tortor risus. Maecenas ac pulvinar quam, et sollicitudin nisl. Nam molestie mollis arcu, non rhoncus neque finibus in. Pellentesque id ante vel purus posuere ultricies quis nec nisl. Fusce finibus at massa pharetra tempor. Aliquam tincidunt eleifend commodo. Mauris suscipit velit et nunc iaculis, viverra egestas nibh semper. Proin ut nulla sit amet enim varius ultricies at tempor elit. Cras sed tellus efficitur, pretium mi interdum, dignissim quam."
       },
       {
         "date": "2022-05-02T00:00:00",
@@ -26,7 +28,8 @@
         "userImg": "",
         "delay": "1d Overdue",
         "status": "Rejected",
-        "id": "1c"
+        "id": "1c",
+        "quickView": "Phasellus efficitur purus magna, et mattis leo semper vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam aliquam ipsum a mattis dapibus. Quisque sit amet tincidunt elit, sed auctor nunc. Cras condimentum orci non nibh sollicitudin blandit sed quis quam. Phasellus non sapien ornare, vehicula libero nec, aliquam turpis. Sed in finibus turpis. Phasellus ultrices egestas congue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In vel urna sit amet nisi ornare tristique. Maecenas eu velit nec metus imperdiet molestie in lobortis quam. Fusce maximus, tellus vel molestie malesuada, risus purus convallis massa, eu sollicitudin libero enim sed nunc. Donec vitae tincidunt turpis, vitae sagittis lacus"
       }
     ],
     "id": 1

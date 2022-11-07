@@ -45,34 +45,36 @@ const ModalOverlay = (props) => {
                 <p className="modal-form-label form-checkbox-title">
                   Job title
                 </p>
-                <input type="radio" id="huey" name="drone" value="huey" />
-                <label for="huey" className="modal-form-label checkbox-label">
-                  Marketing coordinator
-                </label>
-              </div>
-              <div>
-                <input
-                  type="radio"
-                  id="huey"
-                  name="drone"
-                  value="huey"
-                  checked
-                />
-                <label for="huey" className="modal-form-label checkbox-label">
-                  Web designer
-                </label>
-              </div>
-              <div>
-                <input
-                  type="radio"
-                  id="huey"
-                  name="drone"
-                  value="huey"
-                  checked
-                />
-                <label for="huey" className="modal-form-label checkbox-label">
-                  prisident of saless
-                </label>
+                <div>
+                  <input type="radio" id="huey" name="drone" value="huey" />
+                  <label for="huey" className="modal-form-label checkbox-label">
+                    Marketing coordinator
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="huey"
+                    name="drone"
+                    value="huey"
+                    checked
+                  />
+                  <label for="huey" className="modal-form-label checkbox-label">
+                    Web designer
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="huey"
+                    name="drone"
+                    value="huey"
+                    checked
+                  />
+                  <label for="huey" className="modal-form-label checkbox-label">
+                    prisident of saless
+                  </label>
+                </div>
               </div>
             </div>
             <div>

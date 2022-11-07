@@ -1,32 +1,32 @@
-import React, { useState } from "react";
-import QuickItemModal from "./QuickItemModal";
+import React, { useState } from 'react';
+import QuickItemModal from './QuickItemsModal';
 
 const QuickItems = () => {
   const quickItemsList = [
     {
-      title: "Meetings",
+      title: 'Meetings',
       number: 23,
-      iconUrl: "images/meeting.svg",
+      iconUrl: 'images/meeting.svg',
     },
     {
-      title: "Items",
+      title: 'Items',
       number: 11,
-      iconUrl: "images/items.svg",
+      iconUrl: 'images/items.svg',
     },
     {
-      title: "Actions",
+      title: 'Actions',
       number: 15,
-      iconUrl: "images/actions.svg",
+      iconUrl: 'images/actions.svg',
     },
     {
-      title: "Reminders",
+      title: 'Reminders',
       number: 9,
-      iconUrl: "images/reminders.svg",
+      iconUrl: 'images/reminders.svg',
     },
     {
-      title: "Notes",
+      title: 'Notes',
       number: 18,
-      iconUrl: "images/notes.svg",
+      iconUrl: 'images/notes.svg',
     },
   ];
 
@@ -50,11 +50,7 @@ const QuickItems = () => {
           >
             <div className="qc-upper">
               <div className="qc-img-wrap">
-                <img
-                  className="qc-img"
-                  src={item.iconUrl}
-                  alt={item.title}
-                />
+                <img className="qc-img" src={item.iconUrl} alt={item.title} />
               </div>
 
               <p className="qc-number">{item.number}</p>
@@ -70,7 +66,7 @@ const QuickItems = () => {
         + Quick item
       </button>
       {quickItemisShown ? (
-        <QuickItemModal onClose={hideQuickItemHandler}/>
+        <QuickItemModal onClose={hideQuickItemHandler} />
       ) : null}
     </div>
   );

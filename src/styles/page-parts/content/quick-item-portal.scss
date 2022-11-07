@@ -11,11 +11,8 @@
 .modal {
   position: fixed;
   margin: 114px auto auto auto;
-  // top: 20vh;
-  // left: 5%;
   width: 90%;
   background-color: $white;
-  // padding: 20px;
   border-radius: 14px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   z-index: 30;
@@ -47,6 +44,8 @@
 
   input {
     margin-bottom: 15px;
+    border: 1px solid $inputf-gray;
+    border-radius: 3px;
   }
 
   .modal-inner-fwrap {
@@ -76,7 +75,11 @@
   }
 
   .inner-wrapper {
-    width: 100%;
+    width: 100% !important;
+
+    div {
+      width: 100%;
+    }
   }
 
   .form-objective {

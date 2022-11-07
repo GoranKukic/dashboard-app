@@ -1,6 +1,19 @@
-import Records from "../../records.json";
+import React, { useState } from 'react';
+import Records from '../../records.json';
+import ItemsListModal from './ItemsListModal';
 
 const ItemsList = () => {
+
+  const [quickItemisShown, setQuickItemIsShown] = useState(false);
+
+  const showQuickItemHandler = () => {
+    setQuickItemIsShown(true);
+  };
+
+  const hideQuickItemHandler = () => {
+    setQuickItemIsShown(false);
+  };
+
   return (
     <div className="items-list">
       <div className="items-list-date il-item-single">
@@ -23,13 +36,13 @@ const ItemsList = () => {
                 >
                   <div className="date-inner-wrap">
                     <p>
-                      {new Date(data.date).toLocaleDateString("en-GB", {
-                        month: "short",
+                      {new Date(data.date).toLocaleDateString('en-GB', {
+                        month: 'short',
                       })}
                     </p>
                     <p>
-                      {new Date(data.date).toLocaleDateString("en-GB", {
-                        day: "numeric",
+                      {new Date(data.date).toLocaleDateString('en-GB', {
+                        day: 'numeric',
                       })}
                     </p>
                   </div>
@@ -67,8 +80,12 @@ const ItemsList = () => {
             return Records[0].itemsList ? (
               <div className="items-list-td il-user-content">
                 <div className="user-img-wrapper">
-                  {data.userImg === "" ? (
-                    <img key={data.id} src={"images/user-363.png"} alt={data.title} />
+                  {data.userImg === '' ? (
+                    <img
+                      key={data.id}
+                      src={'images/user-363.png'}
+                      alt={data.title}
+                    />
                   ) : (
                     <img key={data.id} src={data.userImg} alt={data.title} />
                   )}
@@ -94,7 +111,15 @@ const ItemsList = () => {
                   <p>{data.delay}</p>
                 </div>
 
-                <img src="images/see-more.svg" alt="See more"></img>
+                <img
+                  onClick={() => showQuickItemHandler(true)}
+                  src="images/see-more.svg"
+                  alt="See more"
+                  className="see-more-img"
+                ></img>
+                {quickItemisShown ? (
+                  <ItemsListModal onClose={hideQuickItemHandler} />
+                ) : null}
               </div>
             ) : null;
           })}
@@ -124,4 +149,3 @@ const ItemsList = () => {
 };
 
 export default ItemsList;
-

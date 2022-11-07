@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Effect } from 'react-notification-badge';
-import NotificationBadge from 'react-notification-badge/lib/components/NotificationBadge';
+import { useAutoAnimate } from '@formkit/auto-animate/react';
 
 const TopBar = () => {
   const [notifBadgeIsShown, setNotifBadgeShown] = useState(false);
@@ -10,6 +9,8 @@ const TopBar = () => {
   });
 
   const refOne = useRef(null);
+
+  const [listRef] = useAutoAnimate();
 
   const handleClick = (e) => {
     if (!refOne.current.contains(e.target)) {
@@ -31,6 +32,7 @@ const TopBar = () => {
       <img className="logo-icon" src="images/logo.svg" alt="Logo icon" />
       <div
         className="notification-wrapper"
+        ref={listRef}
         onClick={() =>
           notifBadgeIsShown === false
             ? setNotifBadgeShown(true)
@@ -38,11 +40,7 @@ const TopBar = () => {
         }
       >
         {!notifBadgeIsShown ? (
-          <NotificationBadge
-            className="notif-badge"
-            count={notifications.length}
-            effect={Effect.SCALE}
-          />
+          <span className="notif-badge">{notifications.length}</span>
         ) : null}
         {notifBadgeIsShown ? <div className="dropdown">{listItems}</div> : null}
 

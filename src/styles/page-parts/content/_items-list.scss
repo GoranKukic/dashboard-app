@@ -107,12 +107,12 @@
   }
 
   .box {
-    position: absolute;
+    position: absolute; 
     content: "";
     height: 36px;
     width: 7px;
     left: 0;
-    z-index: 999;
+    z-index: 9;
     border-radius: 0px 4px 4px 0px;
   }
 
@@ -169,6 +169,11 @@
         margin-right: 0 !important;
         margin-left: auto;
         padding-left: 10px;
+        cursor: pointer;
+
+        &:hover{
+          filter: invert(51%) sepia(57%) saturate(4723%) hue-rotate(182deg);
+        }
       }
 
       @media (max-width: $sm) {
