@@ -29,8 +29,8 @@ Web app functionality:
 
 ## Screenshots
 
-![Screnshoot](images/screenshoot_1.jpg)
-![Screnshoot](images/screenshoot_2.jpg)
+![Screnshoot](public/images/screenshoot_1.jpg)
+![Screnshoot](public/images/screenshoot_2.jpg)
 
 ## What we have learned?
 
