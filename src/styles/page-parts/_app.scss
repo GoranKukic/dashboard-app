@@ -8,9 +8,41 @@
     flex-direction: column;
     max-width: calc(100vw - 60px);
     width: 100%;
+    align-items: center;
   }
 
   .left-wrapper {
     width: 100%;
+  }
+
+  .meeting,
+  .items,
+  .action {
+    height: 100vh;
+    min-width: 100%;
+    display: flex;
+    //justify-content: center;
+    //align-items: center;
+    margin: 0;
+  }
+
+  .action {
+    flex-direction: column;
+  }
+
+  .meeting {
+    .calendar {
+      display: flex;
+      align-items: center;
+    }
+
+    .calendar-wrapper {
+      margin: 0 auto;
+      max-width: none;
+    }
+
+    .calendar-close-btn {
+      display: none;
+    }
   }
 }

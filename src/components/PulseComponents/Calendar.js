@@ -43,7 +43,7 @@ const Calendar = (props) => {
         </div>
         <div className="calendar-input">
           <div className="calendar-form-title">
-            <img src="images/plus.png" Alt="Add" />
+            <img src="images/plus.png" alt="Add" />
             <p className="p-calendar">Add new item</p>
           </div>
           <label for="fname">
