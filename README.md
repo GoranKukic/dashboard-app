@@ -27,6 +27,10 @@ Web app functionality:
 
 [See live here](https://gorankukic-dashboardapp.netlify.app/)
 
+## Screenshots
+
+![Screnshoot](images/screenshoot_1.jpg)
+![Screnshoot](images/screenshoot_2.jpg)
 
 ## What we have learned?
 
