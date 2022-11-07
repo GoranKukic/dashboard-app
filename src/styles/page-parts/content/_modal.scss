@@ -23,8 +23,14 @@
     border-bottom: 1px solid $modal-border;
   }
 
-  .modal-form-body {
+  .modal-body {
     padding: 20px;
+  }
+
+  .quick-view-content {
+    font-size: $font-size-sm;
+    font-weight: 400;
+    line-height: 120%;
   }
 
   .modal-form-label {
@@ -46,6 +52,15 @@
     margin-bottom: 15px;
     border: 1px solid $inputf-gray;
     border-radius: 3px;
+  }
+
+  input,
+  select,
+  textarea {
+    color: $primary-text-color;
+    font-size: $font-size-sm;
+    font-weight: 400;
+    line-height: 120%;
   }
 
   .modal-inner-fwrap {
@@ -87,7 +102,7 @@
     margin-bottom: 120px;
   }
 
-  .modal-from-buttons {
+  .modal-buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

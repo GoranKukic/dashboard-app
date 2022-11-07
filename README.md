@@ -1,39 +1,46 @@
 # Dashboard App
 
-This is task for Junior Front End Developer job interview.
+This is "Dasboard web app".
 
 ## The brief
 
-- Napraviti web stranicu kao iz prilozenog Figma dizajna.
-- Stranicu je potrebno napraviti koristeci Angular/React, a fajlovi za stilove treba da budu u SCSS formatu.
+- Web app is builted with React, styled with SCSS preprocessor and it is displaying data from JSON file.
+- App is fully responsive down to 320px of viewport width.
 
-Funkcionalnosti web stranice:
+Web app functionality:
 
-- Na levom meniju postoje 4 ikonice. Klikom na svaku od ikonica menja se ruta stranice. Pulse ikonica je pocetna stranica koja je definisana u dizajnu.
-  Meeting, Items i Actions stranice nisu definisane u dizajnu i mogu da imaju bilo kakav sadrzaj (mozete i ostaviti prethodno definisani tekst pri pravljenju komponente).
-  Klikom na svaku ikonicu ona menja izgled u aktivno stanje (definisan izgled u dizajnu).
-- U headeru sa desne strane stoji ikonica za notifikacije. Klikom na nju pojavljuje se dropdown sa dve opcije. Opcije treba da imaju hover efekat (kao na dizajnu).
-  Takodje ikonica menja boju na klik i nestaje brojac notifikacija u desnom gornjem uglu.
-  Ponovnim klikom na ikonicu, klikom na opciju ili klikom bilo gde van nje, dropdown treba da nestane. Opcije nemaju nikakvu funkcionalnost.
-- Sa desne strane se nalazi kalendar koji moze da se otvara i zatvara. Klikom na X u gornjem desnom uglu kalendar nestaje i svi podaci na stranici se prosire maksimalno (pogledaj dizajn).
-  Klikom na << ikonicu se ponovo pojavljuje i sadrzaj na stranici se skuplja za sirinu kalendara. Bonus zadatak je ako se doda neka animacija prilikom prikazivanja i sakrivanja kalendara (da ima smisla naravno).
-- Na listi itema postoje 3 vrste statusa. Boje statusa zavise od njihovih tipova (pogledaj dizajn). Takodje boje statusa definisu i boju datuma na pocetku liste itema. Ukoliko
-  je status rejected, item dobija delay 1d overdue (pogledaj dizajn). Klikom na ikonicu koja predstavlja oko, otvara se modalni dijalog koji ima dva dugmeta - ok i close (oba zatvaraju modalni dijalog).
-- Na karticama Task You Initiated i Overdue Actions postoje progres barovi sa procentima. Ukoliko je procenat od 0 do 40 boja bara je crvena i zauzima procenat obojenosti zadate vrednosti. Ukoliko je vrednost
-  izmedju 41 - 60 boja je narandzasta, ukoliko je vrednost 61- 90 boja je plava i ukoliko je vrednost veca od 91 boja je zelena.
-- Klikom na dugme + Quick Item otvara se dijalog sa formama. Nakon popunjavanja forme, klikom na dugme submit, vrednosti iz forme treba da se sacuvaju u json fajl. Sva polja u formi treba da su obavezna, ukoliko nisu submit ne moze da se izvrsi.
-  Bonus zadatak - napraviti validacione poruke ukoliko korisnik nije popunio sva polja.
+- In the header on the right side there is an icon for notifications. By clicking on it, a dropdown with two options appears. The options have a hover effect. Also, the icon changes color on click and the notification counter in the upper right corner disappears. By clicking the icon again, clicking the option, or clicking anywhere outside of it, the dropdown disappear. Options have no functionality.
 
-U prilogu dobijate i data fajl u kojem se nalaze potrebni podaci za rad. Napravite json fajl koji ce da vam posluzi umesto API.
+- On the right side there is a calendar that can be opened and closed. By clicking on the X in the upper right corner, the calendar disappears and all the data on the page is expanded to the maximum. Clicking on the << icon reappears and the content on the page collapses to the width of the calendar. Also there is animation when showing and hiding the calendar is happening.
+
+- There are 3 types of status in the list of items. Status colors depend on their types that are deined in JSON file. The status colors also define the color of the date at the beginning of the list of items. If the status is rejected, the item gets delay 1d overdue. By clicking on the icon representing the eye, a modal dialog opens which has two buttons - "Ok" and "Close" (both close the modal dialog).
+
+- There are progress bars with percentages on the Task You Initiated and Overdue Actions cards. If the percentage is from 0 to 40, the color of the bar is red and occupies the percentage of the coloring of the given value. If the value is between 41 - 60, the color is orange, if the value is 61 - 90, the color is blue, and if the value is greater than 91, the color is green.
+
+(Need to be done)
+
+- There are 4 icons on the left menu. By clicking on each of the icons, the route of the page is changed. The Pulse icon is the home page that is defined in the design. Meeting, Items and Actions pages are not defined in the design and can have any content. By clicking on each icon, it changes the appearance to the active state (defined appearance in the design).
+
+- Clicking on the "+ Quick Item" button opens a dialog with forms. After filling out the form, clicking the submit button, the values ​​from the form should be saved in a json file. All fields in the form should be mandatory, if they are not, the submit cannot be executed. Bonus task - create validation messages if the user has not filled in all the fields.
 
 ## Live Preview
 
-[See live here](https://)
+[See live here](https://gorankukic-dashboardapp.netlify.app/)
 
-## Description
 
-- page is responsive for all devices
-- it is pixel perfect with few minor changes so layout is now centered properly
-- in this project I havent used any preporcesors like SCSS for CSS because that was one of conditions
-- also this page is builted without any JavaScript frameworks
-- page is deployed to netlify, and has live preview
+## What we have learned?
+
+- That React portals are great way to build modals
+- To work with and manipulate JSON files
+
+## Development requirements
+
+- [Node.js](http://nodejs.org/)
+
+To install dependencies run:
+
+`npm install`
+
+To start app run:
+
+`npm start`

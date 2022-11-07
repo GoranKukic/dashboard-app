@@ -2,11 +2,11 @@ import Records from '../../records.json';
 
 const Tasks = () => {
   const colorFunction = (percentage) => {
-    if (percentage >= 90) {
+    if (percentage >= 91) {
       return { backgroundColor: 'green', width: percentage + '%' };
-    } else if (percentage >= 65) {
+    } else if (percentage >= 61) {
       return { backgroundColor: 'blue', width: percentage + '%' };
-    } else if (percentage >= 35) {
+    } else if (percentage >= 41) {
       return { backgroundColor: 'orange', width: percentage + '%' };
     } else {
       return { backgroundColor: 'red', width: percentage + '%' };

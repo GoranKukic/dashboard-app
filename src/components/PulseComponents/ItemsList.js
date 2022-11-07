@@ -3,7 +3,6 @@ import Records from '../../records.json';
 import ItemsListModal from './ItemsListModal';
 
 const ItemsList = () => {
-
   const [quickItemisShown, setQuickItemIsShown] = useState(false);
 
   const showQuickItemHandler = () => {

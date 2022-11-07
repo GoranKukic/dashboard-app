@@ -11,7 +11,7 @@ const ModalOverlay = (props) => {
     <div className="modal">
       <h3 className="modal-headline">Create quick Item</h3>
       <form>
-        <div className="modal-form-body">
+        <div className="modal-body">
           <label for="modal-item-title" className="modal-form-label">
             Item title
           </label>
@@ -139,7 +139,7 @@ const ModalOverlay = (props) => {
             />
           </div>
         </div>
-        <div className="modal-from-buttons">
+        <div className="modal-buttons">
           <button onClick={props.onClose} className="btn">
             Submit
           </button>
@@ -157,9 +157,12 @@ const portalElement = document.getElementById('overlays');
 const QuickItemModal = (props) => {
   return (
     <Fragment>
-      {ReactDOM.createPortal(<Backdrop className="backdrop" />, portalElement)}
       {ReactDOM.createPortal(
-        <ModalOverlay className="modal" onClose={props.onClose} />,
+        <Backdrop onClose={props.onClose} />,
+        portalElement
+      )}
+      {ReactDOM.createPortal(
+        <ModalOverlay onClose={props.onClose} />,
         portalElement
       )}
     </Fragment>
