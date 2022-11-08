@@ -10,13 +10,22 @@
 
 .modal {
   position: fixed;
-  margin: 114px auto auto auto;
+  left: calc(50% - 20rem);
+  margin-top: 114px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 610px;
+  min-width: 250px;
   width: 90%;
   background-color: $white;
   border-radius: 14px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   z-index: 30;
   animation: slide-down 300ms ease-out forwards;
+
+  @media (max-width: $sm) {
+    left: 5%;
+  }
 
   .modal-headline {
     padding: 20px;
@@ -108,13 +117,6 @@
     justify-content: space-between;
     padding: 20px;
     border-top: 1px solid $modal-border;
-  }
-}
-
-@media (min-width: 768px) {
-  .modal {
-    width: 40rem;
-    left: calc(50% - 20rem);
   }
 }
 

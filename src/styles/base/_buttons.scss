@@ -26,13 +26,16 @@
   &:active {
     color: $blue;
   }
+
+  @media (max-width: $sm) {
+    max-width: 100px;
+  }
 }
 
-.calendar-open-btn{
+.calendar-open-btn {
   z-index: 1;
 }
 
-
-.calendar-close-btn{
+.calendar-close-btn {
   z-index: 3;
 }

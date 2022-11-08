@@ -36,7 +36,7 @@ Web app functionality:
 
 - That React portals are great way to build modals.
 - How to build a single-page web application with navigation without the page refreshing by using React Router.
-- To work with and manipulate JSON files
+- To work with and manipulate JSON files.
 
 ## Development requirements
 
