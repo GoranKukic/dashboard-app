@@ -9,6 +9,11 @@
   border-radius: 10px;
   position: relative;
 
+  @media (max-width: $mb) {
+    min-width: 250px;
+    max-width: 100%;
+  }
+
   .actions-headline {
     padding: 16px 20px 13px 20px;
     padding-bottom: 13px;
